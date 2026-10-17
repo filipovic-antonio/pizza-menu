@@ -46,10 +46,17 @@ const pizzaData = [
 ];
 
 export default function App() {
+  return <Header />;
+}
+
+function Header() {
   return (
     <div>
-      <h1>React Pizza House</h1>
-      <p>Our Menu</p>
+      <h1>Pizza React House</h1>
     </div>
   );
 }
+
+function Menu() {}
+
+function Footer() {}
