@@ -46,7 +46,13 @@ const pizzaData = [
 ];
 
 export default function App() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  );
 }
 
 function Header() {
@@ -57,6 +63,33 @@ function Header() {
   );
 }
 
-function Menu() {}
+function Menu() {
+  return (
+    <div>
+      {pizzaData.map((pizza) => (
+        <PizzaList
+          key={pizza.name}
+          name={pizza.name}
+          ingredients={pizza.ingredients}
+          price={pizza.price}
+          photoName={pizza.photoName}
+        />
+      ))}
+    </div>
+  );
+}
 
-function Footer() {}
+function Footer() {
+  return <p>We're open until 22:00h</p>;
+}
+
+function PizzaList({ name, ingredients, price, photoName }) {
+  return (
+    <div>
+      <img src={photoName} alt={name} />
+      <span>{name}</span>
+      <span>{ingredients}</span>
+      <span>{price}</span>
+    </div>
+  );
+}
