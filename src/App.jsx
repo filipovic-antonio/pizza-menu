@@ -47,7 +47,7 @@ const pizzaData = [
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -57,15 +57,15 @@ export default function App() {
 
 function Header() {
   return (
-    <div>
-      <h1>Pizza React House</h1>
+    <div className="header">
+      <h1>Pizza React House Fast Food</h1>
     </div>
   );
 }
 
 function Menu() {
   return (
-    <div>
+    <div className="menu">
       {pizzaData.map((pizza) => (
         <PizzaList
           key={pizza.name}
@@ -85,7 +85,7 @@ function Footer() {
 
 function PizzaList({ name, ingredients, price, photoName }) {
   return (
-    <div>
+    <div className="pizza">
       <img src={photoName} alt={name} />
       <span>{name}</span>
       <span>{ingredients}</span>
