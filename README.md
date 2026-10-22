@@ -1,16 +1,21 @@
-# React + Vite
+Pizza Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive pizza menu application built with React. Browse the menu, check pizza descriptions and prices, and see which pizzas are currently available.
 
-Currently, two official plugins are available:
+Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React
 
-## React Compiler
+JavaScript
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+HTML
 
-## Expanding the ESLint configuration
+CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite
+
+This project helped me practice React fundamentals, component-based development, rendering lists, working with props, and styling a user interface.
+
+Author
+
+Antonio
